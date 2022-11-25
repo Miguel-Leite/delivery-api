@@ -1,9 +1,9 @@
 import { hash } from "bcrypt";
 import { prismaClient } from "../../../../database/prismaClient";
-import { ICreateClient } from "../../../../interfaces/ICreateClient";
+import { IClient } from "../../../../interfaces/IClient";
 
 export class CreateClientUseCase {
-  async execute({ username, password }: ICreateClient) {
+  async execute({ username, password }: IClient) {
 
     const clientExists = await prismaClient.clients.findFirst({
       where: {

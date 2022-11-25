@@ -1,4 +1,4 @@
-export interface ICreateClient {
+export interface IClient {
   username: string;
   password: string;
 }
