@@ -40,10 +40,14 @@ Delivery is a delivery system, where the courier must register in the system to 
 - [x] Create a delivery
 - [x] Create a deliveryman
 - [x] Create a client
+- [x] Update data delivery
 - [x] Deliveryman authentication
 - [x] Client Authentication
 - [x] Validation on router for create a delivery
 - [x] Validation on router for find all available delivery
+- [ ] Find delivery using deliveryman token
+- [ ] Find delivery of deliveryman
+- [ ] Delivery update with delivery date
 
 ## :rocket: Technologies ##
 
