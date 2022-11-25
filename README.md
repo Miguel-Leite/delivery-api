@@ -45,8 +45,8 @@ Delivery is a delivery system, where the courier must register in the system to 
 - [x] Client Authentication with JWT
 - [x] Validation on router for create a delivery
 - [x] Validation on router for find all available delivery
-- [ ] Find delivery using deliveryman token
-- [ ] Find delivery of deliveryman
+- [x] Find delivery using deliveryman token
+- [x] Find delivery of deliveryman
 - [ ] Delivery update with delivery date
 
 ## :rocket: Technologies ##
