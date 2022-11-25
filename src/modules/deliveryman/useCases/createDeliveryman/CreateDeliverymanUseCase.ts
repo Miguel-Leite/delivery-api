@@ -6,11 +6,16 @@ import { IDeliveryman } from "../../../../interfaces/IDeliverman";
 
 export class CreateDeliverymanUseCase {
   async execute({username, password}: IDeliveryman) {
+    // const deliverymanExists = await prismaClient.deliverymans.findFirst({
+    //   where: {
+    //     username: {
+    //       mode: "insensitive"
+    //     }
+    //   }
+    // })
     const deliverymanExists = await prismaClient.deliverymans.findFirst({
       where: {
-        username: {
-          mode: "insensitive"
-        }
+        username
       }
     })
 
