@@ -40,7 +40,7 @@ Delivery is a delivery system, where the courier must register in the system to 
 - [x] Create a delivery
 - [x] Create a deliveryman
 - [x] Create a client
-- [x] Update data delivery
+- [x] Update delivery adding deliveryman
 - [x] Deliveryman authentication with JWT
 - [x] Client Authentication with JWT
 - [x] Validation on router for create a delivery
