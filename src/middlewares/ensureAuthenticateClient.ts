@@ -19,7 +19,7 @@ export async function ensureAuthenticateClient(
 
   try {
     
-    const { sub } = verify(token,`${process.env.JWT_SECRET}`) as IPayload;
+    const { sub } = verify(token,`${process.env.JWT_CLIENT_SECRET}`) as IPayload;
     
     request.id_client = sub;
 

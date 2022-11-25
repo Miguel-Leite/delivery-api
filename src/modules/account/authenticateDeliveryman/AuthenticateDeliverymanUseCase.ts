@@ -23,7 +23,7 @@ export class AuthenticateDeliverymanUseCase {
       throw new Error("Username or password invalid.");
     }
 
-    const token = sign({username}, `${process.env.JWT_SECRET}`, {
+    const token = sign({username}, `${process.env.JWT_DELIVERYMAN_SECRET}`, {
       subject: deliveryman.id,
       expiresIn: "1d"
     });
