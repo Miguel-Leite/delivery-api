@@ -2,6 +2,7 @@ import { Router } from "express";
 
 import { AuthenticateClientController } from "./modules/account/authenticateClient/AuthenticateClientController";
 import { CreateClientController } from "./modules/clients/useCases/createClient/CreateClientController";
+import { CreateDeliverymanController } from "./modules/deliveryman/useCases/createDeliveryman/CreateDeliverymanController";
 
 
 const routes = Router();
@@ -9,5 +10,6 @@ const routes = Router();
 routes.post('/authenticate', new AuthenticateClientController().handle);
 
 routes.post('/clients', new CreateClientController().handle);
+routes.post('/deliverymans', new CreateDeliverymanController().handle);
 
 export { routes };
