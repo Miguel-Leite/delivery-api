@@ -12,13 +12,12 @@
 
 </span>
 
-<!-- Status -->
 
-<!-- <h4 align="center"> 
+<h4 align="center"> 
 	🚧  Delivery 🚀 Under construction...  🚧
-</h4>  -->
+</h4> 
 
-<hr>
+<hr />
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
@@ -61,7 +60,7 @@ The following tools were used in this project:
 
 Before starting :checkered_flag:, you need to have [Git](https://git-scm.com), [Node](https://nodejs.org/en/) and [PostgreSQL](https://www.postgresql.org/) installed.
 
-<b>OBS:</b> You can change the database driver from postgresql to sqlite if you don't have postgresql installed on your PC, don't have problem this.
+<b>Note:</b> You can change the database driver from postgresql to sqlite if you don't have postgresql installed on your PC, don't have problem this.
 
 ## :checkered_flag: Starting ##
 
@@ -91,6 +90,3 @@ This project is under license from MIT. For more details, see the [LICENSE](LICE
 
 Made with :heart: by <a href="https://github.com/Miguel-Leite" target="_blank">{{YOUR_NAME}}</a>
 
-&#xa0;
-
-<a href="#top">Back to top</a>
