@@ -47,7 +47,7 @@ Delivery is a delivery system, where the courier must register in the system to 
 - [x] Validation on router for find all available delivery
 - [x] Find delivery using deliveryman token
 - [x] Find delivery of deliveryman
-- [ ] Delivery update with delivery date
+- [x] Delivery update with delivery date
 
 ## :rocket: Technologies ##
 
