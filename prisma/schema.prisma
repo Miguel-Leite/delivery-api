@@ -6,28 +6,28 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
-model Deliveryman {
+model Deliverymans {
   id            String     @id @default(uuid())
   username      String     @unique
   password      String
 
   Delivery      Deliveries[]
 
-  @@map("deliveryman")
+  @@map("deliverymans")
 }
 
-model Client {
-  id            String @id @default(uuid())
-  name          String
+model Clients {
+  id            String    @id @default(uuid())
+  username      String    @unique
   password      String
 
   Delivery      Deliveries[]
 
-  @@map("client")
+  @@map("clients")
 }
 
 model Deliveries {
@@ -41,8 +41,8 @@ model Deliveries {
   created_at    DateTime @default(now())
   end_at        DateTime
 
-  client        Client      @relation(fields: [id_client], references: [id])
-  delivery      Deliveryman @relation(fields: [id_delivery], references: [id])
+  client        Clients      @relation(fields: [id_client], references: [id])
+  delivery      Deliverymans @relation(fields: [id_delivery], references: [id])
 
   @@map("deliveries")
 }
