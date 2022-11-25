@@ -20,13 +20,13 @@ export class CreateDeliverymanUseCase {
 
     const hashPassword = await hash(password, 10);
 
-    const client = await prismaClient.clients.create({
+    const deliveryman = await prismaClient.deliverymans.create({
       data: {
         username,
         password: hashPassword
       }
     })
 
-    return client; 
+    return deliveryman; 
   }
 }
